@@ -61,7 +61,9 @@ contract FundSubscription is Script, CodeConstants {
 }
 
 contract AddConsumer is Script {
-    function addConsumer(address contractToAddToVrf, address vrfCoordinator, uint256 subscriptionId, address account) public {
+    function addConsumer(address contractToAddToVrf, address vrfCoordinator, uint256 subscriptionId, address account)
+        public
+    {
         console2.log("Adding consumer contract: ", contractToAddToVrf);
         console2.log("To VRF Coordinator: ", vrfCoordinator);
         console2.log("On chain Id: ", block.chainid);
